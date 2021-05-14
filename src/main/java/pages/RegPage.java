@@ -30,12 +30,12 @@ public class RegPage {
     private WebElement createComp;
 
 
-    @Step("Set сomputer name")
+    @Step("Set computer name")
     public void regName() {
         nameComp.sendKeys("Comp322");
     }
 
-    @Step("Set іntroduced data")
+    @Step("Set introduced data")
     public void introducedData() {
 
         inData.sendKeys("2011-05-12");
@@ -53,7 +53,7 @@ public class RegPage {
     }
 
     @Step("Click Create this computer")
-    public void CreateComp() {
+    public void createComp() {
         createComp.click();
     }
 }

@@ -17,7 +17,7 @@ public class Search {
     private WebElement searchBox;
 
     @FindBy(id = "searchsubmit")
-    private WebElement searchsubmit;
+    private WebElement searchSubmit;
 
 
     @Step("Set the computer name in the filter")
@@ -26,8 +26,8 @@ public class Search {
     }
 
     @Step("Click filter by name")
-    public void searchsubmitBtn() {
-        searchsubmit.click();
+    public void searchSubmitBtn() {
+        searchSubmit.click();
     }
 
 }

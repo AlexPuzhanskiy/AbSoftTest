@@ -20,7 +20,7 @@ public class FirstTest extends WebDriverSettings {
 
 
     @Test(priority = 1)
-    public void test1() {
+    public void testAddComp() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.open();
         homePage.addButton();
@@ -29,17 +29,17 @@ public class FirstTest extends WebDriverSettings {
         regPage.introducedData();
         regPage.discontinuedData();
         regPage.nameCompany();
-        regPage.CreateComp();
+        regPage.createComp();
     }
 
 
     @Test(priority = 2)
-    public void test2() {
+    public void testSearchComp() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.open();
         Search search = PageFactory.initElements(driver, Search.class);
         search.searchComp();
-        search.searchsubmitBtn();
+        search.searchSubmitBtn();
 
         Allure.addAttachment("Screen", new ByteArrayInputStream(((TakesScreenshot) this.driver).getScreenshotAs(OutputType.BYTES)));
 
