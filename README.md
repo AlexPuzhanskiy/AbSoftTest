@@ -12,6 +12,8 @@ In writing the test were used:
 -TestNG 7.1.0
 -Gradle 4.10.2
 -Allure 2.13.8
+-Google Chrome 90.0.4430.212
+
 Run test:
 $./gradlew clean test
 
